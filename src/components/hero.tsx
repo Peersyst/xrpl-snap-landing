@@ -10,9 +10,9 @@ export function Hero(): JSX.Element {
                     <div className="flex items-center justify-center">
                         <HeroLogo />
                     </div>
-                    <div className="flex flex-col gap-8 pt-20">
+                    <div className="flex flex-col gap-8 pt-20 px-4 sm:px-0">
                         <p className="font-semibold text-[32px] sm:text-[44px]">XRPL + Metamask Snaps</p>
-                        <div className="gap-2 flex flex-col">
+                        <div className="gap-2 flex flex-col px-2 sm:px-0">
                             <p className="text-[#FFFFFFB8] text-sm">If you have a Metamask wallet now you have a XRPL one.</p>
                             <p className="text-[#FFFFFFB8] text-sm text-wrap">
                                 With our XRPL wallet with Metamask snap support, you will have most of the features of XRPL right in your
