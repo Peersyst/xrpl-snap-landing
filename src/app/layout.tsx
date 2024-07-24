@@ -3,7 +3,6 @@ import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import clsx from "clsx";
-import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
@@ -17,8 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="en">
             <body className={clsx(workSans.className, "dark")}>
-                <Header />
-                <main>{children}</main>
+                <main className="px-4 lg:px-0">{children}</main>
                 <Footer />
                 <TailwindIndicator />
             </body>

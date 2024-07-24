@@ -4,16 +4,32 @@ import { Button } from "./ui/button";
 export function Header(): JSX.Element {
     return (
         <header className="mx-auto max-w-4xl w-full pt-12">
-            <div className="flex items-center justify-between space-x-12">
-                <p className="text-lg font-semibold">XRPL Wallet</p>
+            <div className="flex flex-col sm:flex-row justify-between gap-5 sm:gap-0">
+                <div className="flex items-center flex-1 space-x-12 justify-between sm:justify-start">
+                    <p className="text-lg font-semibold">XRPL Wallet</p>
 
-                <div className="flex flex-1 space-x-6 text-white/75 text-xs">
-                    <Link href="#features">Features</Link>
-                    <Link href="#faq">FAQ</Link>
-                    <p>Github</p>
+                    <div className="flex space-x-6 text-[#FFFFFFB8] text-xs">
+                        <Link href="#features" className="transition-colors hover:text-[#FFFFFFB8]/60">
+                            Features
+                        </Link>
+                        <Link href="#faq" className="transition-colors hover:text-[#FFFFFFB8]/60">
+                            FAQ
+                        </Link>
+                        <Link
+                            href="https://github.com/Peersyst/xrpl-snap"
+                            target="_blank"
+                            className="transition-colors hover:text-[#FFFFFFB8]/60"
+                        >
+                            Github
+                        </Link>
+                    </div>
                 </div>
 
-                <Button variant="outline">Access wallet</Button>
+                <div>
+                    <Button className="w-full" variant="outline">
+                        Access wallet
+                    </Button>
+                </div>
             </div>
         </header>
     );
