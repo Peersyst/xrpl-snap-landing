@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { Logo } from "./logo";
+import { PeersystLogo } from "./peersyst-logo";
 
 export function Footer(): JSX.Element {
     return (
-        <footer className="bg-[#2B2B2E] relative z-10">
+        <footer className="bg-[#2B2B2E] relative z-20">
             <div className="mx-auto max-w-4xl h-52 flex flex-col sm:flex-row sm:justify-between py-6 sm:pt-16 px-4 lg:px-0 gap-5 relative z-20">
                 <div className="flex flex-col gap-3">
                     <Link href="https://peersyst.com/" target="_blank">
-                        <Logo />
+                        <PeersystLogo />
                     </Link>
                     <p className="text-[#B0B0BA] text-sm">Copyright © {new Date().getFullYear()}</p>
                 </div>

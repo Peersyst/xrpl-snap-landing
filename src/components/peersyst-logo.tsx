@@ -1,4 +1,4 @@
-export function Logo(): JSX.Element {
+export function PeersystLogo(): JSX.Element {
     return (
         <svg width="86" height="18" viewBox="0 0 86 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

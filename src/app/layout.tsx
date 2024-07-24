@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="en">
             <body className={clsx(workSans.className, "dark")}>
-                <main className="px-4 lg:px-0">{children}</main>
+                <main>{children}</main>
                 <Footer />
                 <TailwindIndicator />
             </body>
