@@ -26,7 +26,7 @@ export function Hero(): JSX.Element {
 
             <Ripple />
 
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/5 bg-gradient-to-t from-white dark:from-background" />
+            <div className="pointer-events-none absolute h-1/3 inset-x-0 bottom-0 bg-gradient-to-t dark:from-background" />
         </div>
     );
 }
