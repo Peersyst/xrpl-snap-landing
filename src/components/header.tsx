@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 export function Header(): JSX.Element {
     return (
@@ -26,9 +27,9 @@ export function Header(): JSX.Element {
                 </div>
 
                 <div>
-                    <Button className="w-full" variant="outline">
+                    <Link href="https://xrpl-snap.vercel.app/" className={cn("w-full", buttonVariants({ variant: "outline" }))}>
                         Access wallet
-                    </Button>
+                    </Link>
                 </div>
             </div>
         </header>
