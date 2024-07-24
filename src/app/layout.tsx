@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import clsx from "clsx";
 import { Footer } from "@/components/footer";
-
-const workSans = Work_Sans({ subsets: ["latin"] });
+import { workSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
     title: "XRPL Snap",

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
 export function Header(): JSX.Element {
     return (
