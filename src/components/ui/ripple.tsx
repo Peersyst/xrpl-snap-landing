@@ -16,7 +16,7 @@ const Ripple = React.memo(function Ripple({ mainCircleSize = 595, mainCircleOpac
     const dynamicMainCircleSize = isMobile ? 353 : mainCircleSize;
 
     return (
-        <div className="absolute inset-0 flex items-center justify-center bg-white/5">
+        <div className="absolute inset-1 flex bg-white/5">
             {Array.from({ length: numCircles }, (_, i) => {
                 const size = dynamicMainCircleSize + i * 150; // px
                 const opacity = mainCircleOpacity - i * 0.03;
@@ -28,6 +28,7 @@ const Ripple = React.memo(function Ripple({ mainCircleSize = 595, mainCircleOpac
                         className={`absolute animate-ripple rounded-full bg-[#32E685]/10 border top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 [--i:${i}]`}
                         style={
                             {
+                                top: "35%",
                                 width: `${size}px`,
                                 height: `${size}px`,
                                 opacity: opacity,
