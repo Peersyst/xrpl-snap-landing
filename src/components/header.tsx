@@ -9,7 +9,7 @@ export function Header(): JSX.Element {
                 <div className="flex items-center flex-1 space-x-12 justify-between sm:justify-start">
                     <p className="text-lg font-semibold">XRPL Wallet</p>
 
-                    <div className="flex space-x-6 text-[#FFFFFFB8] text-xs z-10">
+                    <nav className="flex space-x-6 text-[#FFFFFFB8] text-xs z-10">
                         <Link href="#features" className="transition-colors hover:text-[#FFFFFFB8]/60">
                             Features
                         </Link>
@@ -23,7 +23,7 @@ export function Header(): JSX.Element {
                         >
                             Github
                         </Link>
-                    </div>
+                    </nav>
                 </div>
 
                 <div>
