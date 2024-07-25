@@ -1,18 +1,9 @@
 import Link from "next/link";
-import { Logo } from "./logo";
 import { FooterSection, FooterSectionProps } from "./footer-section";
+import { PeersystLogo } from "./peersyst-logo";
 
 const resourcesLinks: FooterSectionProps = {
     links: [
-import { PeersystLogo } from "./peersyst-logo";
-
-type LinkProps = {
-    title: string;
-    href: string;
-};
-
-export function Footer(): JSX.Element {
-    const resourcesLinks: LinkProps[] = [
         { title: "Docs", href: "" },
         { title: "Github", href: "https://github.com/Peersyst/xrpl-snap" },
     ],
