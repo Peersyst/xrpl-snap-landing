@@ -1,4 +1,3 @@
-import { Features } from "@/components/features";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 
@@ -7,7 +6,6 @@ export default function Home(): JSX.Element {
         <div className="flex min-h-screen flex-col items-center">
             <Header />
             <Hero />
-            <Features />
         </div>
     );
 }
