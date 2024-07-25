@@ -1,25 +1,27 @@
 import Link from "next/link";
 import { Logo } from "./logo";
+import { FooterSection, FooterSectionProps } from "./footer-section";
 
-type LinkProps = {
-    title: string;
-    href: string;
-};
-
-export function Footer(): JSX.Element {
-    const resourcesLinks: LinkProps[] = [
+const resourcesLinks: FooterSectionProps = {
+    links: [
         { title: "Docs", href: "" },
         { title: "Github", href: "https://github.com/Peersyst/xrpl-snap" },
-    ];
+    ],
+    title: "Resources",
+};
 
-    const contactLinks: LinkProps[] = [
+const contactLinks: FooterSectionProps = {
+    links: [
         { title: "info@peersyst.com", href: "mailto:info@peersyst.com" },
         {
             title: "X",
             href: "https://x.com/peersyst",
         },
-    ];
+    ],
+    title: "Contact",
+};
 
+export function Footer(): JSX.Element {
     return (
         <footer className="bg-[#2B2B2E] relative z-10">
             <div className="mx-auto max-w-4xl h-52 flex flex-col sm:flex-row sm:justify-between py-6 sm:pt-16 px-4 lg:px-0 gap-5 relative z-20">
@@ -31,32 +33,8 @@ export function Footer(): JSX.Element {
                 </div>
 
                 <div className="flex">
-                    <div className="w-36 flex flex-col gap-3 flex-1">
-                        <p>Resources</p>
-                        {resourcesLinks.map((link) => (
-                            <Link
-                                key={link.title}
-                                href={link.href}
-                                target="_blank"
-                                className="text-[#B0B0BA] text-sm transition-colors hover:text-[#B0B0BA]/60"
-                            >
-                                {link.title}
-                            </Link>
-                        ))}
-                    </div>
-                    <div className="w-36 flex flex-col gap-3 flex-1">
-                        <p>Contact</p>
-                        {contactLinks.map((link) => (
-                            <Link
-                                key={link.title}
-                                href={link.href}
-                                target="_blank"
-                                className="text-[#B0B0BA] text-sm transition-colors hover:text-[#B0B0BA]/60"
-                            >
-                                {link.title}
-                            </Link>
-                        ))}
-                    </div>
+                    <FooterSection {...resourcesLinks} />
+                    <FooterSection {...contactLinks} />
                 </div>
             </div>
 

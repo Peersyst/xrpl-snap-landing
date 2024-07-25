@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+import { HeaderLink, HeaderLinkProps } from "./header-link";
+
+const headerLinks: HeaderLinkProps[] = [
+    { label: "Features", url: "#features" },
+    { label: "FAQ", url: "#faq" },
+    { label: "Github", url: "https://github.com/Peersyst/xrpl-snap" },
+];
 
 export function Header(): JSX.Element {
     return (
@@ -10,19 +17,9 @@ export function Header(): JSX.Element {
                     <p className="text-lg font-semibold">XRPL Wallet</p>
 
                     <div className="flex space-x-6 text-[#FFFFFFB8] text-xs">
-                        <Link href="#features" className="transition-colors hover:text-[#FFFFFFB8]/60">
-                            Features
-                        </Link>
-                        <Link href="#faq" className="transition-colors hover:text-[#FFFFFFB8]/60">
-                            FAQ
-                        </Link>
-                        <Link
-                            href="https://github.com/Peersyst/xrpl-snap"
-                            target="_blank"
-                            className="transition-colors hover:text-[#FFFFFFB8]/60"
-                        >
-                            Github
-                        </Link>
+                        {headerLinks.map((link) => (
+                            <HeaderLink key={link.label} {...link} />
+                        ))}
                     </div>
                 </div>
 
