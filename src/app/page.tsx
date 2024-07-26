@@ -1,3 +1,4 @@
+import { Faqs } from "@/components/faqs";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { MoreFeatures } from "@/components/more-features";
@@ -8,6 +9,7 @@ export default function Home(): JSX.Element {
             <Header />
             <Hero />
             <MoreFeatures />
+            <Faqs />
         </div>
     );
 }
