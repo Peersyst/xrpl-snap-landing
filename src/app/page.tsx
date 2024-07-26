@@ -1,3 +1,4 @@
+import { CTA } from "@/components/cta";
 import { Faqs } from "@/components/faqs";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
@@ -10,6 +11,7 @@ export default function Home(): JSX.Element {
             <Hero />
             <MoreFeatures />
             <Faqs />
+            <CTA />
         </div>
     );
 }
