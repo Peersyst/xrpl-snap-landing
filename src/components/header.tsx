@@ -24,7 +24,7 @@ export function Header(): JSX.Element {
                 </div>
 
                 <div>
-                    <Link href="https://xrpl-snap.vercel.app/" className={cn("w-full", buttonVariants({ variant: "outline" }))}>
+                    <Link href="https://xrpl-snap.vercel.app/" className={cn("w-full", buttonVariants({ variant: "outline", size: "sm" }))}>
                         Access wallet
                     </Link>
                 </div>

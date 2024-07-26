@@ -10,7 +10,7 @@ export function MoreFeatures(): JSX.Element {
 
     function renderButtons(): JSX.Element {
         return (
-            <div className="rounded-full px-5 py-3 bg-[#232325] border border-[#FFFFFF29] flex items-center justify-between w-[120px] sm:w-[88px]">
+            <div className="rounded-full px-5 py-3 bg-background border border-[#FFFFFF29] flex items-center justify-between w-[120px] sm:w-[88px]">
                 <button
                     type="button"
                     disabled={!api?.canScrollPrev}
@@ -46,7 +46,7 @@ export function MoreFeatures(): JSX.Element {
                 <Carousel className="w-full" setApi={setApi} opts={{ loop: true }}>
                     <CarouselContent>
                         <CarouselItem className="basis-72">
-                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-[#232325] relative">
+                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <p className="text-2xl">Mainnet or Testnet</p>
                                 <p className="text-sm text-[#B0B0BA]">
                                     Full support for both mainnet and testnet. All powered by the convenience of your Metamask Snap
@@ -56,14 +56,14 @@ export function MoreFeatures(): JSX.Element {
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
-                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-[#232325] relative">
+                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <p className="text-2xl">And NFTs too</p>
                                 <p className="text-sm text-[#B0B0BA]">Not just tokens. Store and transfer your NFTs too with our wallet.</p>
                                 <img src="more-feature-2.png" alt="gradient" className="absolute top-0 right-0 h-72" />
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
-                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-[#232325] relative">
+                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <p className="text-2xl">Access Account Details</p>
                                 <p className="text-sm text-[#B0B0BA]">
                                     Instantly retrieve all your account details and balances with ease.
@@ -72,7 +72,7 @@ export function MoreFeatures(): JSX.Element {
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
-                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-[#232325] relative">
+                            <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <p className="text-2xl">All your transaction history</p>
                                 <p className="text-sm text-[#B0B0BA]">
                                     Always have your transaction history with all its details at your fingertips.

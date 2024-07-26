@@ -16,7 +16,7 @@ export function MobileFeatures(): JSX.Element {
                     <CarouselItem className="flex flex-col gap-10">
                         <img src="feature.png" alt="feature-showcase" />
 
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <p className="font-semibold text-lg text-white">XRPL in MetaMask</p>
                             <p className="text-sm text-[#B0B0BA]">
                                 Easily create and manage an XRPL account in MetaMask with our wallet. Seamlessly connect, secure assets, and
@@ -27,7 +27,7 @@ export function MobileFeatures(): JSX.Element {
                     <CarouselItem className="flex flex-col gap-10">
                         <img src="feature.png" alt="feature-showcase" />
 
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <p className="font-semibold text-lg text-white">Sign any transaction</p>
                             <p className="text-sm text-[#B0B0BA]">Sign and send XRPL transactions with your Metamask</p>
                         </div>
@@ -35,7 +35,7 @@ export function MobileFeatures(): JSX.Element {
                     <CarouselItem className="flex flex-col gap-10">
                         <img src="feature.png" alt="feature-showcase" />
 
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <p className="font-semibold text-lg text-white">Bridge your assets seamlessly to XRPL</p>
                             <p className="text-sm text-[#B0B0BA]">
                                 Seamlessly bridge your assets to XRPL with our wallet and Metamask Snap integration. Securely transfer,
