@@ -1,5 +1,7 @@
+import Link from "next/link";
+import { Features } from "./features";
 import { HeroLogo } from "./hero-logo";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import Ripple from "./ui/ripple";
 
 export function Hero(): JSX.Element {
@@ -19,14 +21,16 @@ export function Hero(): JSX.Element {
                         </p>
                     </div>
                     <div>
-                        <Button>Get started</Button>
+                        <Link href="#features" className={buttonVariants({ variant: "default" })}>
+                            Get started
+                        </Link>
                     </div>
                 </div>
             </div>
 
             <Ripple />
 
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/5 bg-gradient-to-t from-white dark:from-background" />
+            <Features />
         </div>
     );
 }
