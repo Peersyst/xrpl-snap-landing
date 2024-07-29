@@ -4,7 +4,7 @@ import { PeersystLogo } from "./peersyst-logo";
 
 const resourcesLinks: FooterSectionProps = {
     links: [
-        { title: "Docs", href: "" },
+        { title: "Docs", href: "https://docs.xrplevm.org" },
         { title: "Github", href: "https://github.com/Peersyst/xrpl-snap" },
     ],
     title: "Resources",

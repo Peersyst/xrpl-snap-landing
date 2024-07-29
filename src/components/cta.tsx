@@ -8,7 +8,7 @@ export function CTA(): JSX.Element {
                 <p className="text-center font-semibold text-[44px]">Get started today, connect your Metamask to XRPL</p>
 
                 <div>
-                    <Link href="https://xrpl-snap.vercel.app/" target="_blank" className={buttonVariants({ variant: "secondary" })}>
+                    <Link href="https://app.snap.xrplevm.org" target="_blank" className={buttonVariants({ variant: "secondary" })}>
                         Get started
                     </Link>
                 </div>

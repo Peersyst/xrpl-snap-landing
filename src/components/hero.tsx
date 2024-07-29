@@ -21,7 +21,7 @@ export function Hero(): JSX.Element {
                         </p>
                     </div>
                     <div>
-                        <Link href="#features" className={buttonVariants({ variant: "default" })}>
+                        <Link href="https://app.snap.xrplevm.org" className={buttonVariants({ variant: "default" })}>
                             Get started
                         </Link>
                     </div>
