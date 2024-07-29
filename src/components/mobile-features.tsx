@@ -14,7 +14,9 @@ export function MobileFeatures(): JSX.Element {
             >
                 <CarouselContent>
                     <CarouselItem className="flex flex-col gap-10">
-                        <img src="feature.png" alt="feature-showcase" />
+                        <div className="w-full border-8 border-[#39393D] rounded-xl">
+                            <img src="account_info.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                        </div>
 
                         <div className="flex flex-col gap-2">
                             <p className="font-semibold text-lg text-white">XRPL in MetaMask</p>
@@ -25,7 +27,9 @@ export function MobileFeatures(): JSX.Element {
                         </div>
                     </CarouselItem>
                     <CarouselItem className="flex flex-col gap-10">
-                        <img src="feature.png" alt="feature-showcase" />
+                        <div className="w-full border-8 border-[#39393D] rounded-xl">
+                            <img src="send.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                        </div>
 
                         <div className="flex flex-col gap-2">
                             <p className="font-semibold text-lg text-white">Sign any transaction</p>
@@ -33,7 +37,9 @@ export function MobileFeatures(): JSX.Element {
                         </div>
                     </CarouselItem>
                     <CarouselItem className="flex flex-col gap-10">
-                        <img src="feature.png" alt="feature-showcase" />
+                        <div className="w-full border-8 border-[#39393D] rounded-xl">
+                            <img src="bridge.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                        </div>
 
                         <div className="flex flex-col gap-2">
                             <p className="font-semibold text-lg text-white">Bridge your assets seamlessly to XRPL</p>
