@@ -3,11 +3,12 @@ import { Features } from "./features";
 import { buttonVariants } from "./ui/button";
 import Ripple from "./ui/ripple";
 import { XRPLSnapLogo } from "./xrpl-snap-logo";
+import MobileRipple from "./ui/mobile-ripple";
 
 export function Hero(): JSX.Element {
     return (
         <div className="relative flex h-auto w-full flex-col items-center justify-center overflow-hidden">
-            <div className="relative max-w-2xl flex flex-col text-center pt-32 z-10">
+            <div className="relative max-w-2xl flex flex-col text-center pt-36 sm:pt-32 z-10">
                 <div className="flex items-center justify-center">
                     <XRPLSnapLogo />
                 </div>
@@ -29,6 +30,7 @@ export function Hero(): JSX.Element {
             </div>
 
             <Ripple />
+            <MobileRipple />
 
             <Features />
         </div>

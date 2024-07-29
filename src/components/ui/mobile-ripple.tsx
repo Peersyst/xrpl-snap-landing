@@ -8,9 +8,9 @@ interface RippleProps {
     numCircles?: number;
 }
 
-const Ripple = React.memo(function Ripple({ mainCircleSize = 595, mainCircleOpacity = 0.24, numCircles = 6 }: RippleProps) {
+const MobileRipple = React.memo(function Ripple({ mainCircleSize = 353, mainCircleOpacity = 0.24, numCircles = 6 }: RippleProps) {
     return (
-        <div className="absolute inset-1 hidden sm:flex">
+        <div className="absolute inset-1 flex sm:hidden">
             {Array.from({ length: numCircles }, (_, i) => {
                 const size = mainCircleSize + i * 150; // px
                 const opacity = mainCircleOpacity - i * 0.03;
@@ -22,7 +22,7 @@ const Ripple = React.memo(function Ripple({ mainCircleSize = 595, mainCircleOpac
                         className={`absolute animate-ripple rounded-full bg-[#32E685]/10 border top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 [--i:${i}]`}
                         style={
                             {
-                                top: "20%",
+                                top: "16%",
                                 width: `${size}px`,
                                 height: `${size}px`,
                                 opacity: opacity,
@@ -39,6 +39,6 @@ const Ripple = React.memo(function Ripple({ mainCircleSize = 595, mainCircleOpac
     );
 });
 
-Ripple.displayName = "Ripple";
+MobileRipple.displayName = "MobileRipple";
 
-export default Ripple;
+export default MobileRipple;
