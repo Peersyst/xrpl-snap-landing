@@ -14,7 +14,7 @@ const RIPPLE_CONFIG = {
         mainCircleSize: 595,
         mainCircleOpacity: 0.24,
         numCircles: 6,
-        top: "26%",
+        top: "20%",
     },
     mobile: {
         mainCircleSize: 353,
