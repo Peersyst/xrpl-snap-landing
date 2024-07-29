@@ -3,7 +3,7 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 export function MobileFeatures(): JSX.Element {
     return (
-        <div>
+        <div className="sm:hidden">
             <Carousel
                 className="w-full max-w-xs"
                 plugins={[

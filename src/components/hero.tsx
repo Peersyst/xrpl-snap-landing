@@ -3,7 +3,6 @@ import { Features } from "./features";
 import { buttonVariants } from "./ui/button";
 import Ripple from "./ui/ripple";
 import { XRPLSnapLogo } from "./xrpl-snap-logo";
-import MobileRipple from "./ui/mobile-ripple";
 
 export function Hero(): JSX.Element {
     return (
@@ -30,7 +29,7 @@ export function Hero(): JSX.Element {
             </div>
 
             <Ripple />
-            <MobileRipple />
+            <Ripple mobile />
 
             <Features />
         </div>
