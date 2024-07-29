@@ -6,7 +6,7 @@ import Ripple from "./ui/ripple";
 
 export function Hero(): JSX.Element {
     return (
-        <div className="relative flex h-auto w-full flex-col items-center justify-center overflow-hidden shadow-xl">
+        <div className="relative flex h-auto w-full flex-col items-center justify-center overflow-hidden">
             <div className="relative max-w-2xl flex flex-col text-center pt-32 z-10">
                 <div className="flex items-center justify-center">
                     <HeroLogo />
