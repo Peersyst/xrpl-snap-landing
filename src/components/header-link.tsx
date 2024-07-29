@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { HTMLAttributeAnchorTarget } from "react";
 
 export type HeaderLinkProps = {
     label: string;
     url: string;
-    target?: string;
+    target?: HTMLAttributeAnchorTarget;
 };
 
 export function HeaderLink({ label, url, target }: HeaderLinkProps) {

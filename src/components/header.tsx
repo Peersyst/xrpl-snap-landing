@@ -6,7 +6,7 @@ import { HeaderLink, HeaderLinkProps } from "./header-link";
 const headerLinks: HeaderLinkProps[] = [
     { label: "Features", url: "#features" },
     { label: "FAQ", url: "#faq" },
-    { label: "Github", url: "https://github.com/Peersyst/xrpl-snap" },
+    { label: "Github", url: "https://github.com/Peersyst/xrpl-snap", target: "_blank" },
 ];
 
 export function Header(): JSX.Element {
@@ -24,7 +24,11 @@ export function Header(): JSX.Element {
                 </div>
 
                 <div>
-                    <Link href="https://xrpl-snap.vercel.app/" className={cn("w-full", buttonVariants({ variant: "outline" }))}>
+                    <Link
+                        href="https://xrpl-snap.vercel.app/"
+                        target="_blank"
+                        className={cn("w-full", buttonVariants({ variant: "outline", size: "sm" }))}
+                    >
                         Access wallet
                     </Link>
                 </div>
