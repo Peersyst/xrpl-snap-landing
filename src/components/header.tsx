@@ -11,16 +11,16 @@ const headerLinks: HeaderLinkProps[] = [
 
 export function Header(): JSX.Element {
     return (
-        <header className="mx-auto max-w-4xl w-full pt-12">
-            <div className="flex flex-col sm:flex-row justify-between gap-5 sm:gap-0">
+        <header className="mx-auto max-w-4xl w-full pt-5 sm:pt-12 absolute z-50">
+            <div className="flex flex-col sm:flex-row justify-between gap-5 sm:gap-0 px-4 lg:px-0">
                 <div className="flex items-center flex-1 space-x-12 justify-between sm:justify-start">
                     <p className="text-lg font-semibold">XRPL Wallet</p>
 
-                    <div className="flex space-x-6 text-[#FFFFFFB8] text-xs">
+                    <nav className="flex space-x-6 text-[#FFFFFFB8] text-xs z-10">
                         {headerLinks.map((link) => (
                             <HeaderLink key={link.label} {...link} />
                         ))}
-                    </div>
+                    </nav>
                 </div>
 
                 <div>
