@@ -16,7 +16,7 @@ const faqs: { question: string; answer: string }[] = [
 
 export function Faqs(): JSX.Element {
     return (
-        <div className="max-w-4xl flex flex-col pt-20 pb-32 gap-6 sm:gap-12 px-4 lg:px-0 w-full">
+        <div id="faq" className="max-w-4xl flex flex-col pt-20 pb-32 gap-6 sm:gap-12 px-4 lg:px-0 w-full">
             <p className="text-3xl font-semibold text-left">FAQ</p>
 
             <div className="flex flex-col gap-3">
