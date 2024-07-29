@@ -1,6 +1,10 @@
 export function XRPLSnapLogo(): JSX.Element {
     return (
-        <svg width="414" height="384" viewBox="0 0 414 384" fill="none" xmlns="http://www.w3.org/2000/svg" className="z-10">
+        <svg
+            viewBox="0 0 414 384"
+            xmlns="http://www.w3.org/2000/svg"
+            className="z-10 fill-none w-[246px] h-[228px] sm:w-[414px] sm:h-[384px]"
+        >
             <g clipPath="url(#clip0_146_1818)">
                 <path
                     d="M391.608 0.81189L231.324 120.802L260.965 50.0093L391.608 0.81189Z"
