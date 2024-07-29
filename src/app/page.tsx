@@ -1,3 +1,9 @@
-export default function Home() {
-    return <main className="flex min-h-screen flex-col items-center justify-between p-24">XRPL Snap landing page</main>;
+import { Header } from "@/components/header";
+
+export default function Home(): JSX.Element {
+    return (
+        <div className="flex min-h-screen flex-col items-center justify-between">
+            <Header />
+        </div>
+    );
 }

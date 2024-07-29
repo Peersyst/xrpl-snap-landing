@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-
-const workSans = Work_Sans({ subsets: ["latin"] });
+import clsx from "clsx";
+import { Footer } from "@/components/footer";
+import { workSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
     title: "XRPL Snap",
@@ -13,8 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>): JSX.Element {
     return (
         <html lang="en">
-            <body className={workSans.className}>
-                {children}
+            <body className={clsx(workSans.className, "dark")}>
+                <main className="px-4 lg:px-0">{children}</main>
+                <Footer />
                 <TailwindIndicator />
             </body>
         </html>
