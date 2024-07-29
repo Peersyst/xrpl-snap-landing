@@ -10,7 +10,7 @@ interface RippleProps {
 
 const MobileRipple = React.memo(function Ripple({ mainCircleSize = 353, mainCircleOpacity = 0.24, numCircles = 6 }: RippleProps) {
     return (
-        <div className="absolute inset-1 flex sm:hidden">
+        <div className="absolute inset-0 flex sm:hidden">
             {Array.from({ length: numCircles }, (_, i) => {
                 const size = mainCircleSize + i * 150; // px
                 const opacity = mainCircleOpacity - i * 0.03;
