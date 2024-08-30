@@ -2,10 +2,18 @@ import Link from "next/link";
 import { FooterSection, FooterSectionProps } from "./footer-section";
 import { PeersystLogo } from "./peersyst-logo";
 
+const contributeLinks: FooterSectionProps = {
+    links: [
+        { title: "Github", href: "https://github.com/Peersyst/xrpl-snap" },
+        { title: "Open an issue", href: "https://github.com/Peersyst/xrpl-snap/issues" },
+    ],
+    title: "Contribute",
+};
+
 const resourcesLinks: FooterSectionProps = {
     links: [
-        { title: "Docs", href: "https://github.com/Peersyst/xrpl-snap?tab=readme-ov-file#api" },
-        { title: "Github", href: "https://github.com/Peersyst/xrpl-snap" },
+        { title: "Docs", href: "docs.xrplsnap.com " },
+        { title: "Support", href: "https://discord.gg/fbqcUd9B" },
     ],
     title: "Resources",
 };
@@ -33,6 +41,7 @@ export function Footer(): JSX.Element {
                 </div>
 
                 <div className="flex">
+                    <FooterSection {...contributeLinks} />
                     <FooterSection {...resourcesLinks} />
                     <FooterSection {...contactLinks} />
                 </div>

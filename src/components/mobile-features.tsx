@@ -19,21 +19,24 @@ export function MobileFeatures(): JSX.Element {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                            <p className="font-semibold text-lg text-white">XRPL in MetaMask</p>
+                            <h3 className="font-semibold text-lg text-white">Complete XRPL Support in MetaMask</h3>
                             <p className="text-sm text-[#B0B0BA]">
-                                Easily create and manage an XRPL account in MetaMask with our wallet. Seamlessly connect, secure assets, and
-                                explore XRPL&apos;`s potential.
+                                Easily create, manage, and sign any XRPL transaction directly within MetaMask. Seamlessly connect, secure
+                                assets, and explore the full potential of the XRP Ledger.
                             </p>
                         </div>
                     </CarouselItem>
                     <CarouselItem className="flex flex-col gap-10">
                         <div className="w-full border-8 border-[#39393D] rounded-xl">
-                            <img src="send.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                            <img src="transak.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
                         </div>
 
                         <div className="flex flex-col gap-2">
-                            <p className="font-semibold text-lg text-white">Sign any transaction</p>
-                            <p className="text-sm text-[#B0B0BA]">Sign and send XRPL transactions with your Metamask</p>
+                            <h3 className="font-semibold text-lg text-white">Buy XRP Directly from MetaMask</h3>
+                            <p className="text-sm text-[#B0B0BA]">
+                                Quickly purchase XRP directly within MetaMask using our integrated onramp. Start transacting on the XRPL
+                                with ease.
+                            </p>
                         </div>
                     </CarouselItem>
                     <CarouselItem className="flex flex-col gap-10">
@@ -42,10 +45,10 @@ export function MobileFeatures(): JSX.Element {
                         </div>
 
                         <div className="flex flex-col gap-2">
-                            <p className="font-semibold text-lg text-white">Bridge your assets seamlessly to XRPL</p>
+                            <h3 className="font-semibold text-lg text-white">Bridge Assets Between EVM and XRPL</h3>
                             <p className="text-sm text-[#B0B0BA]">
-                                Seamlessly bridge your assets to XRPL with our wallet and Metamask Snap integration. Securely transfer,
-                                manage, and explore new opportunities
+                                Effortlessly bridge your assets between EVM chains, including the XRPL EVM Sidechain, and the XRP Ledger
+                                using our wallet and MetaMask Snap integration.
                             </p>
                         </div>
                     </CarouselItem>

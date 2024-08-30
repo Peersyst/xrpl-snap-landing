@@ -22,7 +22,7 @@ export function Faqs(): JSX.Element {
             <div className="flex flex-col gap-3">
                 {faqs.map((faq, index) => (
                     <div key={`faq-${index}`} className="bg-[#2B2B2E] rounded-xl p-8">
-                        <p className="font-semibold text-lg">{faq.question}</p>
+                        <h3 className="font-semibold text-lg">{faq.question}</h3>
                         <p className="text-sm text-[#B0B0BA]">{faq.answer}</p>
                     </div>
                 ))}

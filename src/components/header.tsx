@@ -25,7 +25,7 @@ export function Header(): JSX.Element {
 
                 <div>
                     <Link
-                        href="https://app.snap.xrplevm.org"
+                        href="https://app.xrplsnap.com"
                         target="_blank"
                         className={cn("w-full", buttonVariants({ variant: "outline", size: "sm" }))}
                     >
