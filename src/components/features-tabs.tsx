@@ -27,17 +27,17 @@ export function FeaturesTabs(): JSX.Element {
             </TabsList>
             <TabsContent value="tab1" className="flex-1">
                 <div className="w-full border-8 border-[#39393D] rounded-xl">
-                    <img src="account_info.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                    <img src="account_info.webp" alt="feature-showcase" className="rounded-sm w-full h-full" />
                 </div>
             </TabsContent>
             <TabsContent value="tab2" className="flex-1">
                 <div className="w-full border-8 border-[#39393D] rounded-xl">
-                    <img src="transak.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                    <img src="transak.webp" alt="feature-showcase" className="rounded-sm w-full h-full" />
                 </div>
             </TabsContent>
             <TabsContent value="tab3" className="flex-1">
                 <div className="w-full border-8 border-[#39393D] rounded-xl">
-                    <img src="bridge.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                    <img src="bridge.webp" alt="feature-showcase" className="rounded-sm w-full h-full" />
                 </div>
             </TabsContent>
         </Tabs>

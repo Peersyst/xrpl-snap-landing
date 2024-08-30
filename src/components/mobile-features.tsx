@@ -15,7 +15,7 @@ export function MobileFeatures(): JSX.Element {
                 <CarouselContent>
                     <CarouselItem className="flex flex-col gap-10">
                         <div className="w-full border-8 border-[#39393D] rounded-xl">
-                            <img src="account_info.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                            <img src="account_info.webp" alt="feature-showcase" className="rounded-sm w-full h-full" />
                         </div>
 
                         <div className="flex flex-col gap-2">
@@ -28,7 +28,7 @@ export function MobileFeatures(): JSX.Element {
                     </CarouselItem>
                     <CarouselItem className="flex flex-col gap-10">
                         <div className="w-full border-8 border-[#39393D] rounded-xl">
-                            <img src="transak.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                            <img src="transak.webp" alt="feature-showcase" className="rounded-sm w-full h-full" />
                         </div>
 
                         <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ export function MobileFeatures(): JSX.Element {
                     </CarouselItem>
                     <CarouselItem className="flex flex-col gap-10">
                         <div className="w-full border-8 border-[#39393D] rounded-xl">
-                            <img src="bridge.jpg" alt="feature-showcase" className="rounded-sm w-full h-full" />
+                            <img src="bridge.webp" alt="feature-showcase" className="rounded-sm w-full h-full" />
                         </div>
 
                         <div className="flex flex-col gap-2">

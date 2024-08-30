@@ -14,6 +14,7 @@ export function MoreFeatures(): JSX.Element {
             <div className="rounded-full px-5 py-3 bg-background border border-[#FFFFFF29] flex items-center justify-between w-[120px] sm:w-[88px]">
                 <button
                     type="button"
+                    aria-label="Scroll left"
                     disabled={!api?.canScrollPrev}
                     className={cn(!api?.canScrollPrev && "opacity-50")}
                     onClick={() => {
@@ -24,6 +25,7 @@ export function MoreFeatures(): JSX.Element {
                 </button>
                 <button
                     type="button"
+                    aria-label="Scroll right"
                     disabled={!api?.canScrollNext}
                     className={cn(!api?.canScrollNext && "opacity-50")}
                     onClick={() => {
@@ -59,21 +61,21 @@ export function MoreFeatures(): JSX.Element {
                             <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <h3 className="text-2xl">Create XRPL account with Metamask</h3>
                                 <p className="text-sm text-[#B0B0BA]">Create new XRPL accounts with the same mnemonic from Metamask.</p>
-                                <img src="more-feature-1.png" alt="gradient" className="absolute bottom-0 h-44 left-0" />
+                                <img src="more-feature-1.webp" alt="gradient" className="absolute bottom-0 h-44 left-0" />
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
                             <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <h3 className="text-2xl">Sign Any transaction</h3>
                                 <p className="text-sm text-[#B0B0BA]">Full support for all transaction types in XRPL</p>
-                                <img src="more-feature-2.png" alt="gradient" className="absolute bottom-0 left-0 h-48 rotate-180" />
+                                <img src="more-feature-2.webp" alt="gradient" className="absolute bottom-0 left-0 h-48 rotate-180" />
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
                             <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <h3 className="text-2xl">On-ramp XRP with Transak</h3>
                                 <p className="text-sm text-[#B0B0BA]">Buy XRP with credit card in seconds.</p>
-                                <img src="more-feature-3.png" alt="gradient" className="absolute top-0 right-0 h-40" />
+                                <img src="more-feature-3.webp" alt="gradient" className="absolute top-0 right-0 h-40" />
                             </div>
                         </CarouselItem>
 
@@ -83,14 +85,14 @@ export function MoreFeatures(): JSX.Element {
                                 <p className="text-sm text-[#B0B0BA]">
                                     Always have your transaction history with all its details at your fingertips.
                                 </p>
-                                <img src="more-feature-1.png" alt="gradient" className="absolute bottom-0 h-44 left-0" />
+                                <img src="more-feature-1.webp" alt="gradient" className="absolute bottom-0 h-44 left-0" />
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
                             <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <h3 className="text-2xl">And NFTs too</h3>
                                 <p className="text-sm text-[#B0B0BA]">Not just tokens. Store and transfer your NFTs too with our wallet.</p>
-                                <img src="more-feature-2.png" alt="gradient" className="absolute top-0 right-0 h-72" />
+                                <img src="more-feature-2.webp" alt="gradient" className="absolute top-0 right-0 h-72" />
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
@@ -100,7 +102,7 @@ export function MoreFeatures(): JSX.Element {
                                     Full support for both mainnet and testnet. All powered by the convenience of your Metamask Snap
                                     integration.
                                 </p>
-                                <img src="more-feature-3.png" alt="gradient" className="absolute top-0 right-0 h-40" />
+                                <img src="more-feature-3.webp" alt="gradient" className="absolute top-0 right-0 h-40" />
                             </div>
                         </CarouselItem>
                         <CarouselItem className="basis-72">
@@ -109,7 +111,7 @@ export function MoreFeatures(): JSX.Element {
                                 <p className="text-sm text-[#B0B0BA]">
                                     Instantly retrieve all your account details and balances with ease.
                                 </p>
-                                <img src="more-feature-2.png" alt="gradient" className="absolute top-0 right-0 h-72" />
+                                <img src="more-feature-2.webp" alt="gradient" className="absolute top-0 right-0 h-72" />
                             </div>
                         </CarouselItem>
                     </CarouselContent>

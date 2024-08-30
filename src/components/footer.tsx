@@ -48,7 +48,7 @@ export function Footer(): JSX.Element {
             </div>
 
             <img
-                src="footer-image.png"
+                src="footer-image.webp"
                 alt="footer-image"
                 className="absolute top-0 sm:top-auto sm:bottom-0 inset-x-1/3 sm:inset-x-auto lg:inset-x-1/3 h-20 sm:h-36 rotate-180 sm:rotate-0 z-10"
             />
