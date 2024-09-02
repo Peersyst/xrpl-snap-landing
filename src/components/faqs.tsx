@@ -4,7 +4,7 @@ const faqs: { question: string; answer: string }[] = [
         answer: "MetaMask Snaps allows users to add features and functionality to their MetaMask wallet. Individual Snaps are features created by third-party developers that MetaMask users can install directly into their wallet.",
     },
     {
-        question: "How can I install Metamask snap for XRPL?",
+        question: "How can I install MetaMask snap for XRPL?",
         answer: "Simply click on Access Wallet and follow the instructions to install the Snap in your MetaMask. Once completed, you'll have the wallet connected to your MetaMask. Just make sure to have the MetaMask extension installed in your browser.",
     },
     { question: "Is it free?", answer: "Yes but keep in mind that network fees may apply." },
