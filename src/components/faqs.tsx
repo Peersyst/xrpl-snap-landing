@@ -12,6 +12,10 @@ const faqs: { question: string; answer: string }[] = [
         question: "How do I ensure I don't lose access to the wallet?",
         answer: "As long as you have access to your MetaMask account or can recover it, you'll be able to access the XRPL wallet.",
     },
+    {
+        question: "What is MetaMask Snaps?",
+        answer: "MetaMask Snaps allows users to add features and functionality to their MetaMask wallet. Individual Snaps are features created by third-party developers that MetaMask users can install directly into their wallet.",
+    },
 ];
 
 export function Faqs(): JSX.Element {
