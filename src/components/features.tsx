@@ -8,7 +8,7 @@ export function Features(): JSX.Element {
         <div id="features" className="max-w-4xl flex flex-col py-20 gap-14 z-10 px-4 lg:px-0">
             <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">
                 Enter the XRPL universe <br />
-                through Metamask
+                through MetaMask
             </h2>
             <div>
                 <MobileFeatures />

@@ -59,8 +59,8 @@ export function MoreFeatures(): JSX.Element {
                     <CarouselContent>
                         <CarouselItem className="basis-72">
                             <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
-                                <h3 className="text-2xl">Create XRPL account with Metamask</h3>
-                                <p className="text-sm text-[#B0B0BA]">Create new XRPL accounts with the same mnemonic from Metamask.</p>
+                                <h3 className="text-2xl">Create XRPL account with MetaMask</h3>
+                                <p className="text-sm text-[#B0B0BA]">Create new XRPL accounts with the same mnemonic from MetaMask.</p>
                                 <img src="more-feature-1.webp" alt="gradient" className="absolute bottom-0 h-44 left-0" />
                             </div>
                         </CarouselItem>
@@ -99,7 +99,7 @@ export function MoreFeatures(): JSX.Element {
                             <div className="p-8 flex flex-col justify-between text-wrap rounded-2xl h-[304px] bg-background relative">
                                 <h3 className="text-2xl">Mainnet or Testnet</h3>
                                 <p className="text-sm text-[#B0B0BA]">
-                                    Full support for both mainnet and testnet. All powered by the convenience of your Metamask Snap
+                                    Full support for both mainnet and testnet. All powered by the convenience of your MetaMask Snap
                                     integration.
                                 </p>
                                 <img src="more-feature-3.webp" alt="gradient" className="absolute top-0 right-0 h-40" />
