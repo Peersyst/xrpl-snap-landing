@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     title: "XRP Ledger Snap",
     description:
         "Manage XRP, XRPL-based tokens and NFTs, bridge from EVM to XRPL, and connect to XRP Ledger dApps with the official XRP Ledger Snap for MetaMask.",
+    icons: {
+        icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>): JSX.Element {
