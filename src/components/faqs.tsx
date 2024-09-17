@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // Define the type correctly
 interface FAQ {
     question: string;
@@ -20,13 +22,23 @@ const faqs: FAQ[] = [
         answer: (
           <>
             Adding XRPL Snap to MetaMask is now easy with{" "}
-            <a href="https://app.xrplsnap.com">
+            <Link
+              target="_blank"
+              href="https://app.xrplsnap.com"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>app.xrplsnap.com</strong>
-            </a>. On the XRPL Snap site, you will be
-            prompted to add the XRPL network on MetaMask. Follow the steps in this{" "}
-            <a href="https://youtu.be/hG9gshvvZ8E?si=np527R6JxLw1msqT">
+            </Link>
+            . On the XRPL Snap site, you will be prompted to add the XRPL network on MetaMask. Follow
+            the steps in this{" "}
+            <Link
+              target="_blank"
+              href="https://youtu.be/hG9gshvvZ8E?si=np527R6JxLw1msqT"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>video</strong>
-            </a> for a straight installation guide.
+            </Link>{" "}
+            for a straight installation guide.
           </>
         ),
       },
@@ -34,16 +46,25 @@ const faqs: FAQ[] = [
         question: "How to add XRP to MetaMask?",
         answer: (
           <>
-            Adding XRP, XRP Ledger native’s currency, to MetaMask is now easy with{" "}
-            <a href="https://app.xrplsnap.com">
+            Adding XRP, XRP Ledger's native currency, to MetaMask is now easy with{" "}
+            <Link
+              target="_blank"
+              href="https://app.xrplsnap.com"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>app.xrplsnap.com</strong>
-            </a>. On the XRPL Snap site, you will be
-            prompted to add the XRPL network on MetaMask. Follow the steps displayed on your MetaMask to
-            Install XRPL. Once installed, an XRPL account will be generated from your MetaMask account
-            mnemonic. To activate; buy or send some XRP. Watch our{" "}
-            <a href="https://youtu.be/hG9gshvvZ8E?si=np527R6JxLw1msqT">
+            </Link>
+            . On the XRPL Snap site, you will be prompted to add the XRPL network on MetaMask. Follow
+            the steps displayed on your MetaMask to install XRPL. Once installed, an XRPL account will
+            be generated from your MetaMask account mnemonic. To activate, buy or send some XRP. Watch
+            our{" "}
+            <Link
+              target="_blank"
+              href="https://youtu.be/hG9gshvvZ8E?si=np527R6JxLw1msqT"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>simple step-by-step tutorial</strong>
-            </a>{" "}
+            </Link>{" "}
             on how to add XRP to MetaMask.
           </>
         ),
@@ -55,9 +76,14 @@ const faqs: FAQ[] = [
             No, Ripple is a company. You’re likely referring to XRP, the native cryptocurrency of XRPL,
             one of the top blockchains in the world. You can buy XRP using our Transak On-Ramp by
             clicking the ‘Buy’ button on{" "}
-            <a href="https://app.xrplsnap.com">
+            <Link
+              target="_blank"
+              href="https://app.xrplsnap.com"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>app.xrplsnap.com</strong>
-            </a>.
+            </Link>
+            .
           </>
         ),
       },
@@ -67,9 +93,14 @@ const faqs: FAQ[] = [
           <>
             Yes. MetaMask, thanks to our Snap, now supports XRP Ledger, its tokens, and all transaction
             types. A bridged XRP on the XRPL EVM can also be accessed through MetaMask. Visit{" "}
-            <a href="https://xrplsnap.com">
+            <Link
+              target="_blank"
+              href="https://xrplsnap.com"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>xrplsnap.com</strong>
-            </a> and add XRP Ledger Snap to MetaMask.
+            </Link>{" "}
+            and add XRP Ledger Snap to MetaMask.
           </>
         ),
       },
@@ -77,12 +108,17 @@ const faqs: FAQ[] = [
         question: "How much XRP is enough to activate my account?",
         answer: (
           <>
-            On the XRPL blockchain, activating an account requires a 10 XRP non-usable Reserve balance.
+            On the XRPL blockchain, activating an account requires a 10 XRP non-usable reserve balance.
             This reserve is meant to prevent infinite account creation and spam on the network. Creating
             Trustlines and adding tokens will require an additional 2 XRP per asset. Learn more about{" "}
-            <a href="https://xrpl.org/docs/concepts/accounts/reserves">
+            <Link
+              target="_blank"
+              href="https://xrpl.org/docs/concepts/accounts/reserves"
+              className="hover:text-[#B0B0BA]/60"
+            >
               <strong>XRP Reserves</strong>
-            </a>.
+            </Link>
+            .
           </>
         ),
       },
@@ -92,8 +128,8 @@ const faqs: FAQ[] = [
           <>
             Developed by Peersyst, a proven blockchain industry leader and a key XRPL community
             contributor, the Snap has been thoroughly audited by Sayfer, ensuring flawless security for
-            an exceptional community. When interacting with the Snap, your XRPL Wallet inherits security
-            from MetaMask, the gold standard of non-custodial wallets, long proved and trusted by over
+            an exceptional community. When interacting with the Snap, your XRPL wallet inherits security
+            from MetaMask, the gold standard of non-custodial wallets, long-proven and trusted by over
             30 million users.
           </>
         ),
