@@ -46,7 +46,7 @@ const faqs: FAQ[] = [
         question: "How to add XRP to MetaMask?",
         answer: (
           <>
-            Adding XRP, XRP Ledger´s native currency, to MetaMask is now easy with{" "}
+            Adding XRP, XRP Ledger&apos;s native currency, to MetaMask is now easy with{" "}
             <Link
               target="_blank"
               href="https://app.xrplsnap.com"
