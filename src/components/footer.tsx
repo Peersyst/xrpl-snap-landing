@@ -12,7 +12,7 @@ const contributeLinks: FooterSectionProps = {
 
 const resourcesLinks: FooterSectionProps = {
     links: [
-        { title: "Docs", href: "https://docs.xrplsnap.com " },
+        { title: "Docs", href: "https://snap-docs.xrplevm.org" },
         { title: "Support", href: "https://discord.gg/fbqcUd9B" },
     ],
     title: "Resources",

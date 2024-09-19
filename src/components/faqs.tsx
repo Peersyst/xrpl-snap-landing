@@ -20,8 +20,8 @@ const faqs: FAQ[] = [
         answer: (
             <>
                 Adding XRPL Snap to MetaMask is now easy with{" "}
-                <Link target="_blank" href="https://app.xrplsnap.com" className="hover:text-[#B0B0BA]/60">
-                    <strong>app.xrplsnap.com</strong>
+                <Link target="_blank" href="https://wallet.xrplevm.org " className="hover:text-[#B0B0BA]/60">
+                    <strong>wallet.xrplevm.org </strong>
                 </Link>
                 . On the XRPL Snap site, you will be prompted to add the XRPL network on MetaMask. Follow the steps in this{" "}
                 <Link target="_blank" href="https://youtu.be/hG9gshvvZ8E?si=np527R6JxLw1msqT" className="hover:text-[#B0B0BA]/60">
@@ -36,8 +36,8 @@ const faqs: FAQ[] = [
         answer: (
             <>
                 Adding XRP, XRP Ledger&apos;s native currency, to MetaMask is now easy with{" "}
-                <Link target="_blank" href="https://app.xrplsnap.com" className="hover:text-[#B0B0BA]/60">
-                    <strong>app.xrplsnap.com</strong>
+                <Link target="_blank" href="https://wallet.xrplevm.org " className="hover:text-[#B0B0BA]/60">
+                    <strong>wallet.xrplevm.org </strong>
                 </Link>
                 . On the XRPL Snap site, you will be prompted to add the XRPL network on MetaMask. Follow the steps displayed on your
                 MetaMask to install XRPL. Once installed, an XRPL account will be generated from your MetaMask account mnemonic. To
@@ -55,8 +55,8 @@ const faqs: FAQ[] = [
             <>
                 No, Ripple is a company. You’re likely referring to XRP, the native cryptocurrency of XRPL, one of the top blockchains in
                 the world. You can buy XRP using our Transak On-Ramp by clicking the ‘Buy’ button on{" "}
-                <Link target="_blank" href="https://app.xrplsnap.com" className="hover:text-[#B0B0BA]/60">
-                    <strong>app.xrplsnap.com</strong>
+                <Link target="_blank" href="https://wallet.xrplevm.org " className="hover:text-[#B0B0BA]/60">
+                    <strong>wallet.xrplevm.org </strong>
                 </Link>
                 .
             </>

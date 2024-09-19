@@ -1,18 +1,19 @@
 import Link from "next/link";
 import { Features } from "./features";
 import { buttonVariants } from "./ui/button";
-import Ripple from "./ui/ripple";
-import { XRPLSnapLogo } from "./xrpl-snap-logo";
 
 export function Hero(): JSX.Element {
     return (
-        <div className="relative flex h-auto w-full flex-col items-center justify-center overflow-hidden">
-            <div className="relative max-w-2xl flex flex-col text-center pt-36 sm:pt-32 z-10">
-                <div className="flex items-center justify-center">
-                    <XRPLSnapLogo />
+        <div className="flex h-auto w-full flex-col items-center justify-center overflow-hidden">
+            <div className="max-w-2xl flex flex-col text-center">
+                <div className="flex items-center justify-center pt-40 sm:pt-[281px]">
+                    <img src="/3d-logo.png" alt="3d-xrpl-logo" className="h-60 w-72" />
                 </div>
-                <div className="flex flex-col gap-8 pt-20 px-4 sm:px-0">
-                    <h1 className="font-semibold text-[32px] sm:text-[44px]">Unlock XRPL&apos;s potential with your MetaMask</h1>
+
+                <div className="flex flex-col gap-4 px-4 sm:px-0 pt-20 sm:pt-48">
+                    <h1 className="font-semibold text-[32px] sm:text-[44px] sm:leading-[56px]">
+                        Unlock XRPL&apos;s potential with your MetaMask
+                    </h1>
                     <div className="gap-2 flex flex-col px-2 sm:px-0">
                         <p className="text-[#FFFFFFB8] text-sm">If you have a MetaMask wallet now you have a XRPL one.</p>
                         <p className="text-[#FFFFFFB8] text-sm text-wrap">
@@ -20,16 +21,13 @@ export function Hero(): JSX.Element {
                             MetaMask wallet.
                         </p>
                     </div>
-                    <div>
-                        <Link href="https://app.xrplsnap.com" className={buttonVariants({ variant: "default" })}>
+                    <div className="pt-4">
+                        <Link href="https://wallet.xrplevm.org " className={buttonVariants({ variant: "default" })}>
                             Get started
                         </Link>
                     </div>
                 </div>
             </div>
-
-            <Ripple />
-            <Ripple mobile />
 
             <Features />
         </div>

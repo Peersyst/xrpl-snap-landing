@@ -7,7 +7,7 @@ export function CTA(): JSX.Element {
             <div className="max-w-4xl mx-auto flex flex-col gap-12 px-4 lg:px-0 items-center">
                 <h2 className="text-center font-semibold text-[44px]">Get started today, connect your MetaMask to XRPL</h2>
                 <div>
-                    <Link href="https://app.xrplsnap.com" target="_blank" className={buttonVariants({ variant: "secondary" })}>
+                    <Link href="https://wallet.xrplevm.org " target="_blank" className={buttonVariants({ variant: "secondary" })}>
                         Get started
                     </Link>
                 </div>
