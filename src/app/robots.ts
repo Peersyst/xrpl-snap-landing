@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/",
         },
-        sitemap: "https://www.xrplsnap.com/sitemap.xml",
+        sitemap: "https://snap.xrplevm.org/sitemap.xml",
     };
 }

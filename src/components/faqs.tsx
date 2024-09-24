@@ -68,8 +68,8 @@ const faqs: FAQ[] = [
             <>
                 Yes. MetaMask, thanks to our Snap, now supports XRP Ledger, its tokens, and all transaction types. A bridged XRP on the XRPL
                 EVM can also be accessed through MetaMask. Visit{" "}
-                <Link target="_blank" href="https://xrplsnap.com" className="hover:text-[#B0B0BA]/60">
-                    <strong>xrplsnap.com</strong>
+                <Link target="_blank" href="https://snap.xrplevm.org/" className="hover:text-[#B0B0BA]/60">
+                    <strong>snap.xrplevm.org</strong>
                 </Link>{" "}
                 and add XRP Ledger Snap to MetaMask.
             </>
@@ -95,8 +95,8 @@ const faqs: FAQ[] = [
             <>
                 Developed by Peersyst, a proven blockchain industry leader and a key XRPL community contributor, the Snap has been
                 thoroughly audited by Sayfer, ensuring flawless security for an exceptional community. When interacting with the Snap, your
-                XRPL wallet inherits security from MetaMask, the gold standard of non-custodial wallets, long-proven and trusted by over 30
-                million users.
+                XRP Ledger Snap inherits security from MetaMask, the gold standard of non-custodial wallets, long-proven and trusted by over
+                30 million users.
             </>
         ),
     },
