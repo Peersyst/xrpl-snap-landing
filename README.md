@@ -1,1 +1,1 @@
-XRPL Snap landing
+XRPL Snap landing page
