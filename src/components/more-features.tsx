@@ -39,7 +39,7 @@ export function MoreFeatures(): JSX.Element {
     }
 
     return (
-        <div className="bg-[#2B2B2E] w-full h-auto sm:h-[788px]">
+        <div className="bg-[#2B2B2E] w-full h-[650px] sm:h-[788px]">
             <div className="max-w-4xl mx-auto flex flex-col pt-12 sm:pt-20 pb-12 sm:pb-32 gap-6 sm:gap-12 px-4 lg:px-0">
                 <div className="flex justify-between">
                     <p className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">And many more features</p>
