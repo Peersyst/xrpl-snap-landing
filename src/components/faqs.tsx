@@ -94,9 +94,16 @@ const faqs: FAQ[] = [
         answer: (
             <>
                 Developed by Peersyst, a proven blockchain industry leader and a key XRPL community contributor, the Snap has been
-                thoroughly audited by Sayfer, ensuring flawless security for an exceptional community. When interacting with the Snap, your
-                XRP Ledger Snap inherits security from MetaMask, the gold standard of non-custodial wallets, long-proven and trusted by over
-                30 million users.
+                thoroughly{" "}
+                <Link
+                    target="_blank"
+                    href="https://sayfer.io/audits/metamask-snap-audit-report-for-peersyst/"
+                    className="hover:text-[#B0B0BA]/60"
+                >
+                    <strong>audited by Sayfer</strong>
+                </Link>
+                , ensuring flawless security for an exceptional community. When interacting with the Snap, your XRP Ledger Snap inherits
+                security from MetaMask, the gold standard of non-custodial wallets, long-proven and trusted by over 30 million users.
             </>
         ),
     },

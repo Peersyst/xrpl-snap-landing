@@ -7,6 +7,7 @@ const headerLinks: HeaderLinkProps[] = [
     { label: "Features", url: "#features" },
     { label: "FAQ", url: "#faq" },
     { label: "Github", url: "https://github.com/Peersyst/xrpl-snap", target: "_blank" },
+    { label: "Security audit", url: "https://sayfer.io/audits/metamask-snap-audit-report-for-peersyst/", target: "_blank" },
 ];
 
 export function Header(): JSX.Element {
