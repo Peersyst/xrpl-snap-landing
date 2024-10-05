@@ -1,13 +1,23 @@
 import Link from "next/link";
 import { Features } from "./features";
 import { buttonVariants } from "./ui/button";
+import dynamic from 'next/dynamic';
+
+const HeroScene = dynamic(() => import('./hero-scene'), {
+    ssr: false,
+});
+
+const HeroLines = dynamic(() => import('./hero-lines'), {
+    ssr: false,
+});
 
 export function Hero(): JSX.Element {
     return (
         <div className="flex h-auto w-full flex-col items-center justify-center overflow-hidden pt-40 sm:pt-0">
-            <img src="/artwork.webp" alt="artwork" className="h-full object-cover w-full" />
-
-            <div className="flex flex-col gap-4 px-4 sm:px-0 max-w-2xl mx-auto text-center sm:-mt-40">
+            <HeroScene />
+            <HeroLines />
+            
+            <div className="flex flex-col gap-4 px-4 sm:px-0 max-w-2xl mx-auto text-center sm:-mt-20">
                 <h1 className="font-semibold text-[32px] sm:text-[44px] sm:leading-[56px]">
                     Unlock XRPL&apos;s potential with your MetaMask
                 </h1>
