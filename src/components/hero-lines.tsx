@@ -63,8 +63,6 @@ const HeroLines = () => {
     const yInitial = (screenWidth <= 640) ? refY + 15 : refY + 30;
     const yTop = (screenWidth <= 640) ? refY - 105 : refY - 210;
 
-    console.log('yInitial', yInitial);
-
     purpleLine2.current = drawLine(draw, yInitial, yTop, xFirstCorner, xSecondCorner, cornerRadius, '#AC5CFB', 'top');
     purpleLine2.current.id('purpleLine2');
 
