@@ -14,10 +14,8 @@ const HeroScene: React.FC = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 2000);
   
-    const minRotationX = -Math.PI / 18; 
-    const maxRotationX = Math.PI / 18;  
-    const minRotationY = -Math.PI / 18; 
-    const maxRotationY = Math.PI / 18; 
+    const maxRotationX = THREE.MathUtils.degToRad(15); 
+    const maxRotationY = THREE.MathUtils.degToRad(15); 
 
     camera.position.set(0, 0, 180);
     camera.lookAt(0, 0, 0);
@@ -75,13 +73,6 @@ const HeroScene: React.FC = () => {
       }
     );
 
-    const onMouseMove = (event: MouseEvent) => {
-      mouse.current.x = (event.clientX / window.innerWidth) * 2 - 1;
-      mouse.current.y = -(event.clientY / window.innerHeight) * 2 + 1; 
-    };
-
-    window.addEventListener('mousemove', onMouseMove, false);
-
     const resizeCanvas = () => {
       const width = container.clientWidth;
       const height = container.clientHeight;
@@ -93,25 +84,22 @@ const HeroScene: React.FC = () => {
 
     window.addEventListener('resize', resizeCanvas);
 
+    const onMouseMove = (event: MouseEvent) => {
+      mouse.current.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    };
+
+    window.addEventListener('mousemove', onMouseMove, false);
+
     const animate = () => {
       requestAnimationFrame(animate);
 
       if (objectRef.current) {
-        const raycaster = new THREE.Raycaster();
-        raycaster.setFromCamera(mouse.current, camera);
-
-        const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
-        const intersectPoint = new THREE.Vector3();
-
-        raycaster.ray.intersectPlane(plane, intersectPoint);
-
-        if (intersectPoint) {
-          objectRef.current.lookAt(intersectPoint);
-        }
-
-        objectRef.current.rotation.x = Math.max(minRotationX, Math.min(maxRotationX, objectRef.current.rotation.x));
-        objectRef.current.rotation.y = Math.max(minRotationY, Math.min(maxRotationY, objectRef.current.rotation.y));
-        objectRef.current.rotation.z = 0;
+        const rotationX = THREE.MathUtils.mapLinear(mouse.current.y, -1, 1, maxRotationX, -maxRotationX);
+        const rotationY = THREE.MathUtils.mapLinear(mouse.current.x, -1, 1, -maxRotationY, maxRotationY);
+  
+        objectRef.current.rotation.x = rotationX; 
+        objectRef.current.rotation.y = rotationY;
       }
 
       renderer.render(scene, camera);
