@@ -18,7 +18,7 @@ export function Header(): JSX.Element {
                 <div className="flex items-center flex-1 space-x-12 justify-between sm:justify-start">
                     <p className="text-base sm:text-lg font-semibold">XRP Ledger Snap</p>
 
-                    <nav className="flex space-x-6 text-[#FFFFFFB8] text-xs z-10">
+                    <nav className="grid grid-cols-3 gap-2 sm:flex sm:space-x-6 text-[#FFFFFFB8] text-xs z-10">
                         {headerLinks.map((link) => (
                             <HeaderLink key={link.label} {...link} />
                         ))}
