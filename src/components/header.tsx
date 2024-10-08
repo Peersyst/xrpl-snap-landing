@@ -6,8 +6,9 @@ import { HeaderLink, HeaderLinkProps } from "./header-link";
 const headerLinks: HeaderLinkProps[] = [
     { label: "Features", url: "#features" },
     { label: "FAQ", url: "#faq" },
-    { label: "Github", url: "https://github.com/Peersyst/xrpl-snap", target: "_blank" },
-    { label: "Security audit", url: "https://sayfer.io/audits/metamask-snap-audit-report-for-peersyst/", target: "_blank" },
+    { label: "Github", url: "https://github.com/Peersyst/xrpl-snap", target: "_blank", showIcon: true },
+    { label: "Security audit", url: "https://sayfer.io/audits/metamask-snap-audit-report-for-peersyst/", target: "_blank", showIcon: true },
+    { label: "Support", url: "https://discord.gg/xrplevm", target: "_blank", showIcon: true },
 ];
 
 export function Header(): JSX.Element {
