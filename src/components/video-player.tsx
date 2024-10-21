@@ -25,7 +25,7 @@ export function VideoPlayer(): JSX.Element {
                     </Button>
                 </div>
             ) : (
-                <ReactPlayer url="https://www.youtube.com/watch?v=k9FF238UJew" playing={playing} width="100%" height="100%" controls />
+                <ReactPlayer url="https://youtu.be/-kCpB0Gsm5A" playing={playing} width="100%" height="100%" controls />
             )}
         </div>
     );
