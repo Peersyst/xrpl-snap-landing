@@ -24,7 +24,7 @@ export function Hero(): JSX.Element {
                     Unlock XRPL&apos;s potential with your MetaMask
                 </h1>
                 <div className="gap-2 flex flex-col px-2 sm:px-0">
-                    <p className="text-[#FFFFFFB8] text-sm">If you have a MetaMask wallet now you have a XRPL one.</p>
+                    <p className="text-[#FFFFFFB8] text-sm">If you have a MetaMask wallet now you have an XRPL one too.</p>
                     <p className="text-[#FFFFFFB8] text-sm text-wrap">
                         With our XRP Ledger Snap with MetaMask snap support, you will have most of the features of XRPL right in your
                         MetaMask wallet.
